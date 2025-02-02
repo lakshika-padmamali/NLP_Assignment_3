@@ -72,8 +72,20 @@ This repository contains an implementation of an **English Text Simplifier** and
 
 ## Evaluation and Verification
 
-1. **Comparison of Attention Mechanisms:** General, Multiplicative, and Additive Attention mechanisms were compared based on translation accuracy and computational efficiency.
+1. **Comparison of Attention Mechanisms:**
+   
+General, Multiplicative, and Additive Attention mechanisms were compared based on translation accuracy and computational efficiency.
+General Attention achieved the best trade-off between computational efficiency and translation accuracy.
+
+Multiplicative Attention had a slight improvement in perplexity (PPL) over General Attention but required higher computational power.
+
+Additive Attention resulted in similar translation accuracy but was slightly less efficient in training time compared to General Attention.
+
+Final Model Selection: Based on overall performance, General Attention was selected as the best model and saved for further deployment.
+
 2. **Performance Plots:**
+
+   
    -![attention general](https://github.com/user-attachments/assets/1b02abcc-13d6-4521-8100-262510f66eee)
    ![attention multiplicative](https://github.com/user-attachments/assets/4006b651-776d-4946-9926-dd2db09a1ce5)
    ![training_loss_comparison](https://github.com/user-attachments/assets/22c19999-654c-45df-b72b-82789fdfadb2)
@@ -81,7 +93,7 @@ This repository contains an implementation of an **English Text Simplifier** and
 
 
 4. **Attention Maps:** Visual representations of model attention to different words during translation.
-5. **Effectiveness Analysis:** The results suggest that **Multiplicative Attention** achieved slightly better performance in **PPL** while **General Attention** maintained lower computational complexity.
+5. **Effectiveness Analysis:** The results suggest that **General Attention** provides a good balance between computational efficiency and translation accuracy, making it the best candidate for real-world text simplification tasks.
 
 ## **Additional Project: English-Sinhala Translator**
 
